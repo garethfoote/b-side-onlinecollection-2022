@@ -7,7 +7,7 @@
   display: flex;
   flex: 4 1 auto;
   flex-direction: column;
-  padding-top: 56px;
+  padding: 56px 0 112px;
   max-width: 1200px;
 }
 

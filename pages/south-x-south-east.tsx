@@ -1,7 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import hpStyles from "../styles/HomePageItem.module.css";
+import styles from "../styles/ArtistPage.module.css";
+import cx from "classnames";
+
+import imgBelinda from "../public/content/belinda.jpg";
 
 const SouthXSouthEast: NextPage = () => {
   return (
@@ -12,7 +16,31 @@ const SouthXSouthEast: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <div className="viewer">
+          <iframe
+            style={{ border: 0, width: 350, height: 442 }}
+            src="https://bandcamp.com/EmbeddedPlayer/track=3422374590/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+            seamless
+          >
+            <a href="https://mamoyo.bandcamp.com/track/south-x-south-east-sxse">
+              SOUTH X SOUTH EAST (SXSE) by MA.MOYO
+            </a>
+          </iframe>
+        </div>
+        <div className={cx(hpStyles["orange"], styles.infoPanel)}>
+          <div className={hpStyles.image}>
+            <figure>
+              <Image
+                layout="fill"
+                objectFit="cover"
+                src={imgBelinda}
+                alt="A photograph of the artist looking over her shoulder."
+              />
+            </figure>
+          </div>
+        </div>
+      </main>
     </div>
   );
 };
