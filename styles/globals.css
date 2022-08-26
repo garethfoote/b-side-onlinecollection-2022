@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Sofia Pro Semi";
+  src: url("../public/fonts/SofiaPro-SemiBold.woff2") format("woff2"),
+    url("../public/fonts/SofiaPro-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../public/fonts/SofiaProRegular.woff2") format("woff2"),
+    url("../public/fonts/SofiaProRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro Semi";
+  src: url("../public/fonts/SofiaPro-SemiBoldItalic.woff2") format("woff2"),
+    url("../public/fonts/SofiaPro-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../public/fonts/SofiaPro-Bold.woff2") format("woff2"),
+    url("../public/fonts/SofiaPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../public/fonts/SofiaPro-Italic.woff2") format("woff2"),
+    url("../public/fonts/SofiaPro-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --colour-black: #4a4a49;
+  --colour-grey: #9f9f9e;
+  --colour-orange: #eb5b25;
+  --colour-cyan: #28b8ce;
+  --colour-lime: #c7d537;
+  --colour-pink: #e6007e;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Sofia Pro", "Helvetica Neue", "Arial Nova", Helvetica, Arial,
+    sans-serif;
+  color: var(--colour-black);
+  overflow-x: hidden;
+}
+
+header {
+  max-width: 800px;
+}
+
+header h1 {
+  border-bottom: 1px solid var(--colour-grey);
+  color: var(--colour-pink);
+  display: inline-block;
+  font-size: 24px;
+  font-weight: normal;
+  min-height: 56px;
+  line-height: 1.5;
+  margin: 0 0 32px;
+  padding-right: 16px;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 20px;
+}
+
+h1 em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 16px;
+  margin: 0 0 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 32px 0 32px 0;
+}
+
+header {
+  margin: 0 32px 0 32px;
+}
+
+@media screen and (min-width: 480px) {
+  header h1 {
+    font-size: 32px;
+    min-height: 56px;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  header h1 {
+    font-size: 40px;
+    min-height: 64px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  header h1 {
+    font-size: 48px;
+    min-height: 72px;
+  }
+}

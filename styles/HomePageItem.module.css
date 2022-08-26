@@ -1,0 +1,169 @@
+.article {
+  --border: 24px;
+  --size: 224px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article.right {
+  text-align: right;
+}
+
+.article.right .image {
+  position: relative;
+  right: -32px;
+  align-self: flex-end;
+}
+
+.image {
+  flex: 0 0 calc(var(--size) + var(--border) * 2);
+  height: calc(var(--size) + var(--border) * 2);
+  width: calc(var(--size) + var(--border) * 2);
+  position: relative;
+  right: 32px;
+}
+
+.orange .image::before {
+  background-color: var(--colour-orange);
+}
+.cyan .image::before {
+  background-color: var(--colour-cyan);
+}
+.lime .image::before {
+  background-color: var(--colour-lime);
+}
+.pink .image::before {
+  background-color: var(--colour-pink);
+}
+
+.orange.article a {
+  color: var(--colour-orange);
+}
+.cyan.article a {
+  color: var(--colour-cyan);
+}
+.orange.lime a {
+  color: var(--colour-lime);
+}
+.pink.article a {
+  color: var(--colour-pink);
+}
+
+.image::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.image figure {
+  height: var(--size);
+  width: var(--size);
+  position: relative;
+  margin: 0;
+  top: var(--border);
+  left: var(--border);
+}
+
+.image img {
+  border-radius: 50%;
+}
+
+.details {
+  margin-top: calc(var(--border) + 4px);
+  padding: 16px;
+}
+
+.leftShape {
+  float: left;
+  width: 50px;
+  height: 100%;
+  shape-outside: ellipse(148px 148px at -100px 143px);
+}
+
+.rightShape {
+  float: right;
+  width: 50px;
+  height: 100%;
+  shape-outside: ellipse(148px 148px at 155px 143px);
+}
+
+.details h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+.details p {
+  margin: 0 0 16px;
+}
+
+.details a {
+}
+
+@media screen and (min-width: 321px) {
+  .article {
+    --size: 272px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .article {
+    flex-direction: row;
+    width: 115%;
+    right: 15%;
+  }
+
+  .article.right .image,
+  .article .image {
+    right: 0;
+  }
+
+  .article.right {
+    flex-direction: row-reverse;
+    right: 0;
+  }
+
+  .article.right .image,
+  .article .image {
+    align-self: center;
+  }
+  .details {
+    margin-left: -50px;
+  }
+
+  .article.right .details {
+    margin-left: 0;
+    margin-right: -45px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .article {
+    width: auto;
+    right: 48px;
+  }
+
+  .article.right {
+    right: -48px;
+  }
+
+  .details {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .article {
+    right: 20vw;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .article {
+    max-width: 880px;
+  }
+}
