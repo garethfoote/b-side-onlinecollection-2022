@@ -38,16 +38,16 @@
 }
 
 .orange.article a {
-  color: var(--colour-orange);
+  color: var(--colour-orange-dark);
 }
 .cyan.article a {
-  color: var(--colour-cyan);
+  color: var(--colour-cyan-dark);
 }
-.orange.lime a {
-  color: var(--colour-lime);
+.lime.article a {
+  color: var(--colour-lime-dark);
 }
 .pink.article a {
-  color: var(--colour-pink);
+  color: var(--colour-pink-dark);
 }
 
 .image::before {
@@ -99,9 +99,6 @@
 }
 .details p {
   margin: 0 0 16px;
-}
-
-.details a {
 }
 
 @media screen and (min-width: 321px) {

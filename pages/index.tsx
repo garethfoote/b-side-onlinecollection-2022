@@ -9,14 +9,6 @@ import imgIoannis from "../public/content/ioannis.png";
 import imgDuncan from "../public/content/duncan.jpg";
 
 const Home: NextPage = () => {
-  const PageLink = ({ href, text }: { href: string; text: string }) => {
-    return (
-      <Link href={href}>
-        <a>{text}</a>
-      </Link>
-    );
-  };
-
   return (
     <div className={styles.container}>
       <Head>
@@ -40,51 +32,43 @@ const Home: NextPage = () => {
       </header>
       <main className={styles.main}>
         <HomePageItem
+          href="south-x-south-east"
           img={{ src: imgBelinda }}
+          altText="A photograph of the artist looking over her shoulder."
           colour="orange"
           alignment="right"
           title="South x South East"
           description="Belinda Zhawis sound work South X South East explores migration and
           identities based on geography and features field recordings and
           contributions by harpist Marysia Osuchowsk and Caleb Azumah Nelson."
-          pageLink={
-            <PageLink
-              href="south-x-south-east"
-              text="Listen to South x South East"
-            />
-          }
+          linkText="Listen to South x South East"
         />
         <HomePageItem
-          img={{ src: imgIoannis }}
+          href="kimberlin"
+          img={{ src: imgDuncan }}
+          altText="A mossy covered wall."
           alignment="left"
           colour="cyan"
-          title="South x South East"
-          description="Belinda Zhawis sound work South X South East explores migration and
-          identities based on geography and features field recordings and
-          contributions by harpist Marysia Osuchowsk and Caleb Azumah Nelson."
-          pageLink={
-            <PageLink
-              href="south-x-south-east"
-              text="Listen to South x South East"
-            />
-          }
+          title="Kimberlin"
+          description="Sit back and enjoy the special online premier of Kimberlin a film about the discovery of an underground cinema on Portland, by film and sound artist Duncan Whitley and featuring a commissioned sound-track by composer Abul Mogard."
+          linkText="Watch Kimberlin"
         />
         <HomePageItem
-          img={{ src: imgDuncan }}
+          href="umwelt-and-the-memory-passage"
+          img={{ src: imgIoannis }}
+          altText="A man holding a box with a head for a tree."
           alignment="right"
           colour="lime"
-          title="South x South East"
-          description="Belinda Zhawis sound work South X South East explores migration and
-          identities based on geography and features field recordings and
-          contributions by harpist Marysia Osuchowsk and Caleb Azumah Nelson."
-          pageLink={
-            <PageLink
-              href="south-x-south-east"
-              text="Listen to South x South East"
-            />
-          }
+          title="Umwelt and The Memory Passage"
+          description="Ioannis Panagiotou presents Umwelt and The Memory Passage, featuring Plus Minus Ensemble, Red Note Ensemble and the Edinburgh Film Music Orchestra. Pilgrim's Horses, part 3 of this trilogy, has been commissioned for b-side and can be seen at Sweet Hill Farm."
+          linkText="Watch Umwelt and The Memory Passage"
         />
       </main>
+      <footer className={styles.fullProgramme}>
+        <a href="">
+          <div>Full festival programme</div>
+        </a>
+      </footer>
     </div>
   );
 };

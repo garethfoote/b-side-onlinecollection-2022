@@ -47,9 +47,13 @@
   --colour-black: #4a4a49;
   --colour-grey: #9f9f9e;
   --colour-orange: #eb5b25;
+  --colour-orange-dark: #5d2009;
   --colour-cyan: #28b8ce;
+  --colour-cyan-dark: #0f454d;
   --colour-lime: #c7d537;
+  --colour-lime-dark: #4d5311;
   --colour-pink: #e6007e;
+  --colour-pink-dark: #56002f;
 }
 
 html,
