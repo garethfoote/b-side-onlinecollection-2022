@@ -30,17 +30,6 @@ const SouthXSouthEast: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.viewer}>
-          <iframe
-            style={{ border: 0, width: 350, height: 442 }}
-            src="https://bandcamp.com/EmbeddedPlayer/track=3422374590/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
-            seamless
-          >
-            <a href="https://mamoyo.bandcamp.com/track/south-x-south-east-sxse">
-              SOUTH X SOUTH EAST (SXSE) by MA.MOYO
-            </a>
-          </iframe>
-        </div>
         <div className={styles.close}>
           <Link href="/">
             <a>
@@ -66,6 +55,18 @@ const SouthXSouthEast: NextPage = () => {
             </a>
           </Link>
         </div>
+        <div className={styles.viewer}>
+          <iframe
+            style={{ border: 0, width: 350, height: 442 }}
+            src="https://bandcamp.com/EmbeddedPlayer/track=3422374590/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+            seamless
+          >
+            <a href="https://mamoyo.bandcamp.com/track/south-x-south-east-sxse">
+              SOUTH X SOUTH EAST (SXSE) by MA.MOYO
+            </a>
+          </iframe>
+        </div>
+
         <div className={cx(styles[colour], styles.infoPanel)}>
           <div className={styles.imageContainer}>
             <ImageCircle
