@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../styles/ArtistPage.module.css";
 import ImageCircle from "../components/imagecircle";
 import cx from "classnames";
@@ -29,7 +30,7 @@ const SouthXSouthEast: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <div className="viewer">
+        <div className={styles.viewer}>
           <iframe
             style={{ border: 0, width: 350, height: 442 }}
             src="https://bandcamp.com/EmbeddedPlayer/track=3422374590/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
@@ -40,12 +41,39 @@ const SouthXSouthEast: NextPage = () => {
             </a>
           </iframe>
         </div>
+        <div className={styles.close}>
+          <Link href="/">
+            <a>
+              <svg
+                width="45"
+                height="45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M43.18 1.82a3.083 3.083 0 0 1 0 4.36l-37 37a3.083 3.083 0 0 1-4.36-4.36l37-37a3.083 3.083 0 0 1 4.36 0Z"
+                  fill="#000"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.82 1.82a3.083 3.083 0 0 1 4.36 0l37 37a3.083 3.083 0 1 1-4.36 4.36l-37-37a3.083 3.083 0 0 1 0-4.36Z"
+                  fill="#000"
+                />
+              </svg>
+            </a>
+          </Link>
+        </div>
         <div className={cx(styles[colour], styles.infoPanel)}>
-          <ImageCircle
-            img={imgBelinda}
-            altText="A photograph of the artist looking over her shoulder."
-            colour={colour}
-          />
+          <div className={styles.imageContainer}>
+            <ImageCircle
+              img={imgBelinda}
+              altText="A photograph of the artist looking over her shoulder."
+              colour={colour}
+            />
+          </div>
           <div className={styles.details}>
             <h1>South x South East</h1>
             <h2>Belinda Zhawis</h2>
@@ -53,7 +81,7 @@ const SouthXSouthEast: NextPage = () => {
               Belinda Zhawis sound work South X South East explores migration
               and identities based on geography and features field recordings
               and contributions by harpist Marysia Osuchowsk and Caleb Azumah
-              Nelson." linkText="Listen to South x South East
+              Nelson.
             </p>
           </div>
         </div>

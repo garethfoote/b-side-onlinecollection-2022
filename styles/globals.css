@@ -54,6 +54,11 @@
   --colour-lime-dark: #4d5311;
   --colour-pink: #e6007e;
   --colour-pink-dark: #56002f;
+  --colour-sky-blue: #e5fcfe;
+}
+
+#__next {
+  height: 100%;
 }
 
 html,
@@ -64,6 +69,7 @@ body {
     sans-serif;
   color: var(--colour-black);
   overflow-x: hidden;
+  height: 100%;
 }
 
 header {
@@ -104,10 +110,6 @@ p {
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  margin: 2rem 0 2rem 0;
 }
 
 header {
