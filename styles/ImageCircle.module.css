@@ -1,0 +1,43 @@
+.image {
+  --border: 24px;
+  --size: 224px;
+  flex: 0 0 calc(var(--size) + var(--border) * 2);
+  height: calc(var(--size) + var(--border) * 2);
+  width: calc(var(--size) + var(--border) * 2);
+  position: relative;
+}
+
+.orange.image::before {
+  background-color: var(--colour-orange);
+}
+.cyan.image::before {
+  background-color: var(--colour-cyan);
+}
+.lime.image::before {
+  background-color: var(--colour-lime);
+}
+.pink.image::before {
+  background-color: var(--colour-pink);
+}
+
+.image::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.image figure {
+  height: var(--size);
+  width: var(--size);
+  position: relative;
+  margin: 0;
+  top: var(--border);
+  left: var(--border);
+}
+
+.image img {
+  border-radius: 50%;
+}

@@ -3,37 +3,19 @@
   flex-direction: column;
 }
 
-.article.right {
-  text-align: right;
-}
-
-.article.right .image {
-  position: relative;
-  right: -32px;
-  align-self: flex-end;
-}
-
-.image {
-  --border: 24px;
-  --size: 224px;
-  flex: 0 0 calc(var(--size) + var(--border) * 2);
-  height: calc(var(--size) + var(--border) * 2);
-  width: calc(var(--size) + var(--border) * 2);
+.article .imageContainer {
   position: relative;
   right: 32px;
 }
 
-.orange .image::before {
-  background-color: var(--colour-orange);
+.article.right {
+  text-align: right;
 }
-.cyan .image::before {
-  background-color: var(--colour-cyan);
-}
-.lime .image::before {
-  background-color: var(--colour-lime);
-}
-.pink .image::before {
-  background-color: var(--colour-pink);
+
+.article.right .imageContainer {
+  position: relative;
+  right: -32px;
+  align-self: flex-end;
 }
 
 .orange.article a {
@@ -47,28 +29,6 @@
 }
 .pink.article a {
   color: var(--colour-pink-dark);
-}
-
-.image::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-}
-
-.image figure {
-  height: var(--size);
-  width: var(--size);
-  position: relative;
-  margin: 0;
-  top: var(--border);
-  left: var(--border);
-}
-
-.image img {
-  border-radius: 50%;
 }
 
 .details {
@@ -110,22 +70,22 @@
   .article {
     flex-direction: row;
     width: 115%;
-    right: 15%;
+    right: 10%;
     gap: 16px;
   }
 
-  .article.right .image,
-  .article .image {
+  .article.right .imageContainer,
+  .article .imageContainer {
     right: 0;
   }
 
   .article.right {
     flex-direction: row-reverse;
-    right: 0;
+    right: 5%;
   }
 
-  .article.right .image,
-  .article .image {
+  .article.right .imageContainer,
+  .article .imageContainer {
     align-self: center;
   }
   .details {

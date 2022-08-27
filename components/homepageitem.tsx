@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image, { ImageProps } from "next/image";
 import styles from "../styles/HomePageItem.module.css";
+import ImageCircle from "./imagecircle";
 import cx from "classnames";
 
 type Colours = "orange" | "cyan" | "pink" | "lime";
@@ -28,19 +29,8 @@ const HomePageItem = ({
 }: Props) => {
   return (
     <article className={cx(styles[colour], styles.article, styles[alignment])}>
-      <div className={styles.image}>
-        <Link href={href}>
-          <a>
-            <figure>
-              <Image
-                layout="fill"
-                objectFit="cover"
-                src={img.src}
-                alt={altText}
-              />
-            </figure>
-          </a>
-        </Link>
+      <div className={styles.imageContainer}>
+        <ImageCircle href={href} img={img} altText={altText} colour={colour} />
       </div>
       <div className={styles.details}>
         <div

@@ -17,6 +17,18 @@ const Home: NextPage = () => {
           name="description"
           content="An online programme of sound and image, part of b-side Festival 2022."
         />
+        <link
+          rel="icon"
+          href="https://b-side.org.uk/wp-content/uploads/2022/03/target-header.svg"
+          type=""
+          sizes="16x16"
+        />
+        <link
+          rel="icon"
+          href="https://b-side.org.uk/wp-content/uploads/2022/03/target-header.svg"
+          type=""
+          sizes="32x32"
+        />
       </Head>
 
       <header>
