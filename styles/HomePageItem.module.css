@@ -5,7 +5,7 @@
 
 .article .imageContainer {
   position: relative;
-  right: 32px;
+  right: 2rem;
 }
 
 .article.right {
@@ -14,7 +14,7 @@
 
 .article.right .imageContainer {
   position: relative;
-  right: -32px;
+  right: -2rem;
   align-self: flex-end;
 }
 
@@ -32,37 +32,37 @@
 }
 
 .details {
-  margin-top: calc(var(--border) + 4px);
-  padding: 16px;
+  margin-top: calc(var(--border) + 0.25rem);
+  padding: 1rem;
 }
 
 .leftShape {
   float: left;
-  width: 50px;
+  width: 3.125rem;
   height: 100%;
   shape-outside: ellipse(148px 148px at -100px 143px);
 }
 
 .rightShape {
   float: right;
-  width: 50px;
+  width: 3.125rem;
   height: 100%;
   shape-outside: ellipse(148px 148px at 155px 143px);
 }
 
 .details h1 {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 600;
-  margin: 0 0 16px;
+  margin: 0 0 1rem;
 }
 .details p {
-  margin: 0 0 16px;
+  margin: 0 0 1rem;
 }
 
 @media screen and (min-width: 321px) {
   .article {
-    --size: 272px;
+    --size: 17rem;
   }
 }
 
@@ -71,7 +71,7 @@
     flex-direction: row;
     width: 115%;
     right: 10%;
-    gap: 16px;
+    gap: 1rem;
   }
 
   .article.right .imageContainer,
@@ -89,23 +89,23 @@
     align-self: center;
   }
   .details {
-    margin-left: -50px;
+    margin-left: -3.125rem;
   }
 
   .article.right .details {
     margin-left: 0;
-    margin-right: -45px;
+    margin-right: -2.8125rem;
   }
 }
 
 @media screen and (min-width: 767px) {
   .article {
     width: auto;
-    right: 48px;
+    right: 3rem;
   }
 
   .article.right {
-    right: -48px;
+    right: -3rem;
   }
 
   .details {
@@ -121,6 +121,6 @@
 
 @media screen and (min-width: 1201px) {
   .article {
-    max-width: 880px;
+    max-width: 55rem;
   }
 }

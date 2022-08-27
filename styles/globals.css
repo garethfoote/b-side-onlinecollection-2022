@@ -74,17 +74,17 @@ header h1 {
   border-bottom: 1px solid var(--colour-grey);
   color: var(--colour-pink);
   display: inline-block;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: normal;
-  min-height: 56px;
+  min-height: 3.5rem;
   line-height: 1.5;
-  margin: 0 0 32px;
-  padding-right: 16px;
+  margin: 0 0 2rem;
+  padding-right: 1rem;
   text-transform: uppercase;
 }
 
 header p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 h1 em {
@@ -98,8 +98,8 @@ a {
 }
 
 p {
-  font-size: 16px;
-  margin: 0 0 16px;
+  font-size: 1rem;
+  margin: 0 0 1rem;
 }
 
 * {
@@ -107,31 +107,31 @@ p {
 }
 
 body {
-  margin: 32px 0 32px 0;
+  margin: 2rem 0 2rem 0;
 }
 
 header {
-  margin: 0 32px 0 32px;
+  margin: 0 2rem 0 2rem;
 }
 
 @media screen and (min-width: 480px) {
   header h1 {
-    font-size: 32px;
-    min-height: 56px;
+    font-size: 2rem;
+    min-height: 3.5rem;
     white-space: nowrap;
   }
 }
 
 @media screen and (min-width: 1201px) {
   header h1 {
-    font-size: 40px;
-    min-height: 64px;
+    font-size: 2.5rem;
+    min-height: 3.875rem;
   }
 }
 
 @media screen and (min-width: 1441px) {
   header h1 {
-    font-size: 48px;
-    min-height: 72px;
+    font-size: 3rem;
+    min-height: 4.5rem;
   }
 }

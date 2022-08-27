@@ -1,6 +1,6 @@
 .image {
-  --border: 24px;
-  --size: 224px;
+  --border: 1.5rem;
+  --size: 14rem;
   flex: 0 0 calc(var(--size) + var(--border) * 2);
   height: calc(var(--size) + var(--border) * 2);
   width: calc(var(--size) + var(--border) * 2);
