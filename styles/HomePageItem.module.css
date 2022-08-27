@@ -69,7 +69,7 @@
 @media screen and (min-width: 481px) {
   .article {
     flex-direction: row;
-    width: 115%;
+    width: 110%;
     right: 10%;
     gap: 1rem;
   }
@@ -81,7 +81,7 @@
 
   .article.right {
     flex-direction: row-reverse;
-    right: 5%;
+    right: 0;
   }
 
   .article.right .imageContainer,
