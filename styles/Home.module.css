@@ -55,6 +55,9 @@
   .fullProgramme div {
     font-size: 1.5rem;
   }
+  .main {
+    padding-top: 5.5rem;
+  }
 }
 
 @media screen and (min-width: 1023px) {
@@ -66,12 +69,6 @@
 
 @media screen and (min-width: 1201px) {
   .main {
-    padding-top: 4rem;
-  }
-}
-
-@media screen and (min-width: 1441px) {
-  .main {
-    padding-top: 4.5rem;
+    padding-top: 6rem;
   }
 }

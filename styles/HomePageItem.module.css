@@ -56,9 +56,6 @@
   font-weight: 600;
   margin: 0 0 1rem;
 }
-.details p {
-  margin: 0 0 1rem;
-}
 
 @media screen and (min-width: 321px) {
   .article {
@@ -69,8 +66,7 @@
 @media screen and (min-width: 481px) {
   .article {
     flex-direction: row;
-    width: 110%;
-    right: 10%;
+    right: 2rem;
     gap: 1rem;
   }
 
@@ -81,12 +77,12 @@
 
   .article.right {
     flex-direction: row-reverse;
-    right: 0;
+    right: -2rem;
   }
 
   .article.right .imageContainer,
   .article .imageContainer {
-    align-self: center;
+    align-self: normal;
   }
   .details {
     margin-left: -3.125rem;
@@ -100,14 +96,11 @@
 
 @media screen and (min-width: 767px) {
   .article {
-    width: auto;
     right: 3rem;
   }
-
   .article.right {
     right: -3rem;
   }
-
   .details {
     padding: 0;
   }
@@ -116,6 +109,14 @@
 @media screen and (min-width: 1023px) {
   .article {
     right: 20vw;
+  }
+
+  .details p {
+    margin: 0 -4rem 1rem 0;
+  }
+
+  .article.right .details p {
+    margin: 0 0 1rem -4rem;
   }
 }
 
