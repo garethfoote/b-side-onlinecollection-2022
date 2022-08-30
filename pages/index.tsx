@@ -36,10 +36,10 @@ const Home: NextPage = () => {
           B-Side: <em>Online Collection</em>
         </h1>
         <p>
-          Want to see and hear some more or cant make it to the island? Our
-          online programme of sound and image is available until 18th September.
-          Featuring work by festival artists Duncan Whitley, Belinda Zhawi and
-          Ioannis Panagiotou.
+          Want to see and hear some more or can&apos;t make it to the island?
+          Our online programme of sound and image is available until 18th
+          September. Featuring work by festival artists Duncan Whitley, Belinda
+          Zhawi and Ioannis Panagiotou.
         </p>
       </header>
       <main className={styles.main}>
@@ -50,7 +50,7 @@ const Home: NextPage = () => {
           colour="orange"
           alignment="right"
           title="South x South East"
-          description="Belinda Zhawis sound work South X South East explores migration and
+          description="Belinda Zhawis' sound work South X South East explores migration and
           identities based on geography and features field recordings and
           contributions by harpist Marysia Osuchowsk and Caleb Azumah Nelson."
           linkText="Listen to South x South East"
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
         />
       </main>
       <footer className={styles.fullProgramme}>
-        <a href="">
+        <a href="https://b-side.org.uk/project/festival-2022/">
           <div>
             <span>
               Full
