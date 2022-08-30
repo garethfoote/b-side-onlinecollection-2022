@@ -22,22 +22,46 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  transform: translate(-40%, 40%);
+  transform: translate(-50%, 50%);
   background-color: var(--colour-pink);
-  width: 23.75rem;
-  height: 23.75rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
 }
 
 .fullProgramme div {
+  display: flex;
   position: absolute;
-  width: 41%;
+  width: 50%;
   height: 50%;
-  left: 46%;
-  top: 3.4375rem;
+  left: 50%;
+  top: 0;
   transform: rotateZ(-10.5deg);
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   color: white;
+  /* background-color: rgba(255, 0, 0, 0.5); */
+}
+
+.fullProgramme div span {
+  padding: 0 0 2rem 1rem;
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 767px) {
+  .fullProgramme {
+    width: 24rem;
+    height: 24rem;
+  }
+  .fullProgramme div {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .container {
+    display: flex;
+    gap: 2rem;
+  }
 }
 
 @media screen and (min-width: 1201px) {
@@ -49,12 +73,5 @@
 @media screen and (min-width: 1441px) {
   .main {
     padding-top: 4.5rem;
-  }
-}
-
-@media screen and (min-width: 1023px) {
-  .container {
-    display: flex;
-    gap: 2rem;
   }
 }

@@ -79,9 +79,11 @@ const Home: NextPage = () => {
       <footer className={styles.fullProgramme}>
         <a href="">
           <div>
-            Full
-            <br /> festival
-            <br /> programme
+            <span>
+              Full
+              <br /> festival
+              <br /> programme
+            </span>
           </div>
         </a>
       </footer>
