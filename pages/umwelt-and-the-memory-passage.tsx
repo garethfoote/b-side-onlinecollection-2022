@@ -99,7 +99,7 @@ const UmweltAndMemoryPassage: NextPage = () => {
                 relationship between my family&apos;s lost memories and my
                 Umwelt?
               </p>
-              <p className={styles.deemphasised}>
+              <p className="deemphasised">
                 concept, performance, composition: Ioannis Panagiotou
                 <br />
                 video: Alia-Lauren Clain
@@ -121,7 +121,7 @@ const UmweltAndMemoryPassage: NextPage = () => {
                 story. Is it possible to have an anamnesis of an event in which
                 you never took part?
               </p>
-              <p className={styles.deemphasised}>
+              <p className="deemphasised">
                 concept: Ioannis Panagiotou and Dorothea Kalogianni
                 <br />
                 performance, composition: Ioannis Panagiotou
@@ -131,7 +131,7 @@ const UmweltAndMemoryPassage: NextPage = () => {
                 description: video performance, sound, concrete, water, light,
                 smoke
               </p>
-              <p className={styles.deemphasised}>
+              <p className="deemphasised">
                 Dorothea Kalogianni is a UK-based architect from Greece with an
                 interest in the affective and liminal experience of digitally
                 mediated spaces. She is a PhD candidate in Architecture at The
@@ -172,7 +172,9 @@ const UmweltAndMemoryPassage: NextPage = () => {
                 Using the Rivers Thames and Exe as a starting point,
                 Belinda&apos;s work will blend reflections on two great rivers
                 bound together by a shared history of trade, movement and
-                migration.
+                migration. Belinda's commission has been developed in
+                partnership with{" "}
+                <a href="www.counterpointsarts.org.uk">Counterpoints Arts</a>.
               </p>
               <p>
                 Ioannis&apos; multi-media installation and live music
@@ -184,10 +186,7 @@ const UmweltAndMemoryPassage: NextPage = () => {
                 Catastrophe. Using Portland bridleways to imagine and trace the
                 journey on horseback by one of his relatives, the work seeks to
                 discover lost memories and stories of diaspora. Ioannis will be
-                joined by Lithuanian guitarist Danguole Lingyte.{" "}
-                <em>Who Do We Think We Are?</em> is being developed in
-                partnership with{" "}
-                <a href="www.counterpointsarts.org.uk">Counterpoints Arts</a>.
+                joined by Lithuanian guitarist Danguole Lingyte.
               </p>
             </div>
           </div>

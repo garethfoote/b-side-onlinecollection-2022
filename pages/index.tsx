@@ -57,9 +57,7 @@ const Home: NextPage = () => {
             colour="orange"
             alignment="right"
             title="South x South East"
-            description="Belinda Zhawis' sound work South X South East explores migration and
-          identities based on geography and features field recordings and
-          contributions by harpist Marysia Osuchowsk and Caleb Azumah Nelson."
+            description="Belinda Zhawi's sound work South X South East explores migration and identities based on geography and features field recordings and contributions by harpist Marysia Osuchowsk and Caleb Azumah Nelson. "
             linkText="Listen to South x South East"
           />
           <HomePageItem
@@ -79,7 +77,7 @@ const Home: NextPage = () => {
             alignment="right"
             colour="lime"
             title="Umwelt and The Memory Passage"
-            description="Ioannis Panagiotou presents Umwelt and The Memory Passage, featuring Plus Minus Ensemble, Red Note Ensemble and the Edinburgh Film Music Orchestra. Pilgrim's Horses, part 3 of this trilogy, has been commissioned for b-side and can be seen at Sweet Hill Farm."
+            description="Ioannis Panagiotou presents 2 films, Umwelt and The Memory Passage, featuring Plus Minus Ensemble, Red Note Ensemble and the Edinburgh Film Music Orchestra. Pilgrim's Horses, part 3 of this trilogy, has been commissioned for b-side and can be seen at Sweet Hill Farm."
             linkText="Watch Umwelt and The Memory Passage"
           />
         </main>

@@ -103,57 +103,9 @@ const Kimberlin: NextPage = () => {
                 Abul Mogard&apos;s synthesiser, emerging as faint memories of
                 place: echoes of the digital future of an England now difficult
                 to grasp. Where &quot;quarry bells no longer ring, except in old
-                men&apos;s dreams&quot;.
-              </p>
-            </div>
-            <div className={styles.projectContainer}>
-              <h3>This work is part of</h3>
-              <h1>
-                <span className="deemphasised">Common Lands:</span> Who do we
-                think we are?
-              </h1>
-              <p>
-                Over the years, b-side artists from both on and off the island
-                have created artworks that celebrate, question and provoke
-                thoughts on place, identity and belonging. Lots of us have taken
-                part by sharing our special places here on the island and
-                sometimes we&apos;ve lamented those places we can no longer
-                live.
-              </p>
-              <p>
-                This year, and going forward, we want to widen the lens and
-                extend the conversation further. We want to go deeper in our
-                exploration of belonging, displacement and thoughts on migration
-                - historical and contemporary, and both on and off the island,
-                by inviting new voices to add richness, inspiration and
-                challenge to the conversation. We are delighted that two
-                artists, <b>Belinda Zhawi</b> and <b>Ioannis Panagiotou</b>,
-                will be sharing with you their responses to the theme{" "}
-                <em>Who Do We Think We Are?</em>
-              </p>
-              <p>
-                Belinda&apos;s sound and poetry installation,{" "}
-                <a href="https://b-side.org.uk/events/viva-voce/">Viva Voce</a>,
-                will trace the movement of tides, people, animals and goods.
-                Using the Rivers Thames and Exe as a starting point,
-                Belinda&apos;s work will blend reflections on two great rivers
-                bound together by a shared history of trade, movement and
-                migration.
-              </p>
-              <p>
-                Ioannis&apos; multi-media installation and live music
-                performance,{" "}
-                <a href="https://b-side.org.uk/events/pilgrims-horses/">
-                  Pilgrim&apos;s Horses
-                </a>
-                , marks the one hundred year anniversary of the Asia Minor
-                Catastrophe. Using Portland bridleways to imagine and trace the
-                journey on horseback by one of his relatives, the work seeks to
-                discover lost memories and stories of diaspora. Ioannis will be
-                joined by Lithuanian guitarist Danguole Lingyte.{" "}
-                <em>Who Do We Think We Are?</em> is being developed in
-                partnership with{" "}
-                <a href="www.counterpointsarts.org.uk">Counterpoints Arts</a>.
+                men&apos;s dreams&quot;. (Text features a quotation from
+                &quot;The Quarry Bells&quot; by Cecil &quot;Skylark&quot;
+                Durston)
               </p>
             </div>
           </div>

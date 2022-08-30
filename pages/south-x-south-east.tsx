@@ -66,7 +66,7 @@ const SouthXSouthEast: NextPage = () => {
               />
             </div>
             <h1>South x South East</h1>
-            <h2>Belinda Zhawis</h2>
+            <h2>Belinda Zhawi</h2>
           </div>
           <div className={styles.viewer}>
             <iframe
@@ -80,12 +80,71 @@ const SouthXSouthEast: NextPage = () => {
             </iframe>
           </div>
           <div className={styles.projectDescription}>
-            <p>
-              Belinda Zhawis sound work South X South East explores migration
-              and identities based on geography and features field recordings
-              and contributions by harpist Marysia Osuchowsk and Caleb Azumah
-              Nelson.
-            </p>
+            <div className={styles.projectContainer}>
+              <p>
+                South X South East explores migration and identities based on
+                geography and features field recordings and contributions by
+                harpist Marysia Osuchowsk and Caleb Azumah Nelson. Belinda Zhawi
+                is a Zimbabwean literary &amp; sound artist based in London,
+                author of Small Inheritances (ignitionpress, 2018), &amp;
+                experiments with sound/text performance as MA.MOYO. Her work has
+                been featured on various platforms including The White Review,
+                NTS, Boiler Room &amp; BBC Radio. She&apos;s held residencies
+                with Triangle Asterides, Serpentine Galleries and ICA London.
+                Belinda&apos;s the co-founder of literary arts platform,
+                BORN::FREE.
+              </p>
+            </div>
+            <div className={styles.projectContainer}>
+              <h3>This work is part of</h3>
+              <h1>
+                <span className="deemphasised">Common Lands:</span> Who do we
+                think we are?
+              </h1>
+              <p>
+                Over the years, b-side artists from both on and off the island
+                have created artworks that celebrate, question and provoke
+                thoughts on place, identity and belonging. Lots of us have taken
+                part by sharing our special places here on the island and
+                sometimes we&apos;ve lamented those places we can no longer
+                live.
+              </p>
+              <p>
+                This year, and going forward, we want to widen the lens and
+                extend the conversation further. We want to go deeper in our
+                exploration of belonging, displacement and thoughts on migration
+                - historical and contemporary, and both on and off the island,
+                by inviting new voices to add richness, inspiration and
+                challenge to the conversation. We are delighted that two
+                artists, <b>Belinda Zhawi</b> and <b>Ioannis Panagiotou</b>,
+                will be sharing with you their responses to the theme{" "}
+                <em>Who Do We Think We Are?</em>
+              </p>
+              <p>
+                Belinda&apos;s sound and poetry installation,{" "}
+                <a href="https://b-side.org.uk/events/viva-voce/">Viva Voce</a>,
+                will trace the movement of tides, people, animals and goods.
+                Using the Rivers Thames and Exe as a starting point,
+                Belinda&apos;s work will blend reflections on two great rivers
+                bound together by a shared history of trade, movement and
+                migration.
+              </p>
+              <p>
+                Ioannis&apos; multi-media installation and live music
+                performance,{" "}
+                <a href="https://b-side.org.uk/events/pilgrims-horses/">
+                  Pilgrim&apos;s Horses
+                </a>
+                , marks the one hundred year anniversary of the Asia Minor
+                Catastrophe. Using Portland bridleways to imagine and trace the
+                journey on horseback by one of his relatives, the work seeks to
+                discover lost memories and stories of diaspora. Ioannis will be
+                joined by Lithuanian guitarist Danguole Lingyte.{" "}
+                <em>Who Do We Think We Are?</em> is being developed in
+                partnership with{" "}
+                <a href="www.counterpointsarts.org.uk">Counterpoints Arts</a>.
+              </p>
+            </div>
           </div>
         </div>
       </main>
