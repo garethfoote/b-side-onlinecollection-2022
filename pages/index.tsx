@@ -44,9 +44,9 @@ const Home: NextPage = () => {
             Belinda Zhawi and Ioannis Panagiotou.
           </p>
           <p className="deemphasised">
-            b-side Festival's Online Collection has been made possible with
-            support from the British Council's International Collaboration Grant
-            programme.
+            b-side Festival&apos;s Online Collection has been made possible with
+            support from the British Council&apos;s International Collaboration
+            Grant programme.
           </p>
         </header>
         <main className={styles.main}>

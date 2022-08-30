@@ -172,7 +172,7 @@ const UmweltAndMemoryPassage: NextPage = () => {
                 Using the Rivers Thames and Exe as a starting point,
                 Belinda&apos;s work will blend reflections on two great rivers
                 bound together by a shared history of trade, movement and
-                migration. Belinda's commission has been developed in
+                migration. Belinda&apos;s commission has been developed in
                 partnership with{" "}
                 <a href="www.counterpointsarts.org.uk">Counterpoints Arts</a>.
               </p>
