@@ -57,19 +57,18 @@
   --colour-sky-blue: #e5fcfe;
 }
 
-#__next {
-  height: 100%;
-}
-
 html,
 body {
   padding: 0;
   margin: 0;
+}
+
+body {
+  height: 100%;
   font-family: "Sofia Pro", "Helvetica Neue", "Arial Nova", Helvetica, Arial,
     sans-serif;
   color: var(--colour-black);
   overflow-x: hidden;
-  height: 100%;
 }
 
 header {

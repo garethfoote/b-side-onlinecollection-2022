@@ -41,7 +41,7 @@ const HomePageItem = ({
         ></div>
         <h1>{title}</h1>
         <p>{description}</p>
-        <Link scroll={false} href={href}>
+        <Link href={href}>
           <a>{linkText}</a>
         </Link>
       </div>
