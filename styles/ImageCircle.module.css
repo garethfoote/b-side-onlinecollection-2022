@@ -3,6 +3,7 @@
   --size: 14rem;
   height: calc(var(--size) + var(--border) * 2);
   min-width: calc(var(--size) + var(--border) * 2);
+  width: calc(var(--size) + var(--border) * 2);
   position: relative;
 }
 
