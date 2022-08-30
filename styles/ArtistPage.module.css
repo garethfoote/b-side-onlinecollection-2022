@@ -14,13 +14,11 @@
 .viewer {
   flex: 1 0 auto;
   background-color: var(--colour-sky-blue);
-  padding: 5rem 2rem 2rem 2rem;
+  padding: 3rem 1rem;
   display: flex;
   justify-content: center;
-}
-
-.infoPanel {
-  padding: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .imageContainer {
@@ -29,42 +27,61 @@
   justify-content: center;
 }
 
-.details h1 {
+.projectDescription,
+.projectHeader {
+  padding: 2rem;
+}
+
+.projectHeader h1 {
   text-transform: uppercase;
   font-size: 1.5rem;
   line-height: 1.5;
   margin: 0;
 }
 
-.details h2 {
+.projectHeader h2 {
   font-size: 1rem;
   font-style: italic;
   font-weight: 600;
   margin: 0 0 1rem;
 }
 
-.orange .details h2 {
+.orange .projectHeader h2 {
   color: var(--colour-orange);
 }
-.cyan .details h2 {
+.cyan .projectHeader h2 {
   color: var(--colour-cyan);
 }
-.lime .details h2 {
+.lime .projectHeader h2 {
   color: var(--colour-lime);
 }
-.pink .details h2 {
+.pink .projectHeader h2 {
   color: var(--colour-pink);
 }
 
 @media screen and (min-width: 767px) {
   .main {
-    display: flex;
+    position: relative;
     width: 100%;
   }
 
   .infoPanel {
-    flex: 0 0 auto;
     width: 24rem;
     margin-top: 3rem;
+    right: 0;
+    position: absolute;
+  }
+
+  .viewer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: calc(100vw - 24rem);
+    height: 100%;
+    padding-top: 5rem;
+  }
+
+  .projectDescription {
+    padding-top: 0;
   }
 }
