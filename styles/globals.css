@@ -97,6 +97,9 @@ h1 em {
   font-style: normal;
   font-weight: 600;
 }
+h1 span.deemphasised {
+  font-weight: normal;
+}
 
 a {
   color: inherit;

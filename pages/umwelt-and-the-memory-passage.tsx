@@ -89,29 +89,107 @@ const UmweltAndMemoryPassage: NextPage = () => {
             </div>
           </div>
           <div className={styles.projectDescription}>
-            <p>
-              Kimberlin is a short film, first completed in 2019, with a 2022
-              cut to be premiered at this year’s festival. The film is about the
-              discovery of an underground cinema cavern on the Isle of Portland:
-              the uncanny discovery and subsequent breaking news begin to
-              generate speculation amongst islanders as to who created the
-              cavern and the canisters of film found within it. Kimberlin
-              features a specially commissioned soundtrack by acclaimed
-              electronic musician Abul Mogard.
-            </p>
-            <p>
-              It appears we are under siege! On Portland the sea encroaches,
-              landslips erode the island’s cliffs, slowly but surely. Inland,
-              the quarries that scar the landscape eventually grow over,
-              interring dialect and song. The super-8mm films found inside the
-              cinema cavern also bear scars – scratches and burns in the
-              emulsion surface, in which are recorded images of Portland’s
-              landscape and fauna. Field recordings of fog horns and the
-              trilling of songbirds pass through the filters of Abul Mogard's
-              synthesiser, emerging as faint memories of place: echoes of the
-              digital future of an England now difficult to grasp. Where “quarry
-              bells no longer ring, except in old men’s dreams”.
-            </p>
+            <div className={styles.projectContainer}>
+              <h1>Umwelt</h1>
+              <h2>Ioannis Panagiotou</h2>
+              <p>
+                &ldquo;Umwelt&rdquo; rebuilds, with the use of ephemeral media:
+                memories of my great-grandfather, experiences from a lost war, a
+                destroyed villa in the woods, and a lost notebook. What is the
+                relationship between my family&apos;s lost memories and my
+                Umwelt?
+              </p>
+              <p className={styles.deemphasised}>
+                concept, performance, composition: Ioannis Panagiotou
+                <br />
+                video: Alia-Lauren Clain
+                <br />
+                music performance: Plus-Minus Ensemble (London)
+                <br />
+                description: video performance, sound, military boxes, pine
+                trees, water, sand
+              </p>
+            </div>
+            <div className={styles.projectContainer}>
+              <h1>The Memory Passage</h1>
+              <h2>Ioannis Panagiotou and Dorothea Kalogianni</h2>
+              <p>
+                During the Greek Genocide in 1922, a member of the family,
+                Manolis, was murdered in a mill as he was trying to escape to
+                Greece. &quot;The Memory Passage&quot; entails a recorded
+                performance that portrays the imaginary narration of the above
+                story. Is it possible to have an anamnesis of an event in which
+                you never took part?
+              </p>
+              <p className={styles.deemphasised}>
+                concept: Ioannis Panagiotou and Dorothea Kalogianni
+                <br />
+                performance, composition: Ioannis Panagiotou
+                <br />
+                music performance: Edinburgh Film Music Orchestra,
+                <br />
+                description: video performance, sound, concrete, water, light,
+                smoke
+              </p>
+              <p className={styles.deemphasised}>
+                Dorothea Kalogianni is a UK-based architect from Greece with an
+                interest in the affective and liminal experience of digitally
+                mediated spaces. She is a PhD candidate in Architecture at The
+                University of Edinburgh, where she has also been a tutor.
+                Dorothea collaborates with sound and visual artists on the
+                creation of interactive audiovisual exploratory setups.
+              </p>
+            </div>
+            <div className={styles.projectContainer}>
+              <h3>This work is part of</h3>
+              <h1>
+                <span className="deemphasised">Common Lands:</span> Who do we
+                think we are?
+              </h1>
+              <p>
+                Over the years, b-side artists from both on and off the island
+                have created artworks that celebrate, question and provoke
+                thoughts on place, identity and belonging. Lots of us have taken
+                part by sharing our special places here on the island and
+                sometimes we&apos;ve lamented those places we can no longer
+                live.
+              </p>
+              <p>
+                This year, and going forward, we want to widen the lens and
+                extend the conversation further. We want to go deeper in our
+                exploration of belonging, displacement and thoughts on migration
+                - historical and contemporary, and both on and off the island,
+                by inviting new voices to add richness, inspiration and
+                challenge to the conversation. We are delighted that two
+                artists, <b>Belinda Zhawi</b> and <b>Ioannis Panagiotou</b>,
+                will be sharing with you their responses to the theme{" "}
+                <em>Who Do We Think We Are?</em>
+              </p>
+              <p>
+                Belinda&apos;s sound and poetry installation,{" "}
+                <a href="https://b-side.org.uk/events/viva-voce/">Viva Voce</a>,
+                will trace the movement of tides, people, animals and goods.
+                Using the Rivers Thames and Exe as a starting point,
+                Belinda&apos;s work will blend reflections on two great rivers
+                bound together by a shared history of trade, movement and
+                migration.
+              </p>
+              <p>
+                Ioannis&apos; multi-media installation and live music
+                performance,{" "}
+                <a href="https://b-side.org.uk/events/pilgrims-horses/">
+                  Pilgrim&apos;s Horses
+                </a>
+                , marks the one hundred year anniversary of the Asia Minor
+                Catastrophe. Using Portland bridleways to imagine and trace the
+                journey on horseback by one of his relatives, the work seeks to
+                discover lost memories and stories of diaspora. Ioannis will be
+                joined by Lithuanian guitarist Danguole Lingyte.{" "}
+                <em>Who Do We Think We Are?</em> is being developed in
+                partnership with{" "}
+                <a href="www.counterpointsarts.org.uk">Counterpoints Arts</a>.
+              </p>
+            </div>
           </div>
         </div>
       </main>

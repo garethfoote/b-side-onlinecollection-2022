@@ -58,11 +58,11 @@ const Home: NextPage = () => {
         <HomePageItem
           href="kimberlin"
           img={{ src: imgDuncan }}
-          altText="A mossy covered wall."
+          altText="A mossy covered wall. Still image from project."
           alignment="left"
           colour="cyan"
           title="Kimberlin"
-          description="Sit back and enjoy the special online premier of Kimberlin a film about the discovery of an underground cinema on Portland, by film and sound artist Duncan Whitley and featuring a commissioned sound-track by composer Abul Mogard."
+          description="Kimberlin is a short film, first completed in 2019, with a 2022 cut to be premiered at this year's festival. The film is about the discovery of an underground cinema cavern on the Isle of Portland: the uncanny discovery and subsequent breaking news begin to generate speculation amongst islanders as to who created the cavern and the canisters of film found within it. Kimberlin features a specially commissioned soundtrack by acclaimed electronic musician Abul Mogard."
           linkText="Watch Kimberlin"
         />
         <HomePageItem
