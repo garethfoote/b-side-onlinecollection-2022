@@ -128,7 +128,7 @@
 
 @media screen and (min-width: 1201px) {
   .viewer.youtube {
-    justify-content: center;
+    justify-content: normal;
     align-items: normal;
   }
 
