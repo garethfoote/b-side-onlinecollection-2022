@@ -23,14 +23,13 @@
   gap: 2rem;
 }
 
-.youtubeEmbed {
+.videoEmbed {
   position: relative;
   padding-bottom: 56.25%;
   width: 100%;
-  background: indianred;
 }
 
-.youtubeEmbed iframe {
+.videoEmbed iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -93,6 +92,11 @@
   color: var(--colour-pink);
 }
 
+@media screen and (min-width: 481px) {
+  .viewer {
+    padding: 3rem 2rem;
+  }
+}
 @media screen and (min-width: 767px) {
   .main {
     position: relative;
@@ -128,7 +132,7 @@
     align-items: normal;
   }
 
-  .youtubeEmbed {
+  .videoEmbed {
     margin: 0 auto;
     width: 49rem;
     height: 27.5625rem;

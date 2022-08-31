@@ -69,19 +69,19 @@ const UmweltAndMemoryPassage: NextPage = () => {
             <h2>Ioannis Panagiotou</h2>
           </div>
           <div className={cx(styles.viewer, styles.youtube)}>
-            <div className={styles.youtubeEmbed}>
+            <div className={styles.videoEmbed}>
               <iframe
                 src="https://www.youtube.com/embed/xNJLYaGGA3s"
-                title="YouTube video player"
+                title="Umwelt"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
             </div>
-            <div className={styles.youtubeEmbed}>
+            <div className={styles.videoEmbed}>
               <iframe
                 src="https://www.youtube.com/embed/4A1O52gOvRs"
-                title="YouTube video player"
+                title="The Memory Passage"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

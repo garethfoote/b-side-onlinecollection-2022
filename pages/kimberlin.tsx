@@ -69,15 +69,16 @@ const Kimberlin: NextPage = () => {
             <h2>Duncan Whitley</h2>
           </div>
           <div className={styles.viewer}>
-            <iframe
-              style={{ border: 0, width: 350, height: 442 }}
-              src="https://bandcamp.com/EmbeddedPlayer/track=3422374590/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
-              seamless
-            >
-              <a href="https://mamoyo.bandcamp.com/track/south-x-south-east-sxse">
-                SOUTH X SOUTH EAST (SXSE) by MA.MOYO
-              </a>
-            </iframe>
+            <div className={styles.videoEmbed}>
+              <iframe
+                src="https://player.vimeo.com/video/744902886?h=19485ab0f5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                title="Kimberlin (2022 cut)"
+              ></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
           </div>
           <div className={styles.projectDescription}>
             <div className={styles.projectContainer}>
