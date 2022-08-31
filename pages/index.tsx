@@ -7,8 +7,16 @@ import Canvas from "../components/canvas";
 import imgBelinda from "../public/content/belinda.jpg";
 import imgIoannis from "../public/content/ioannis.png";
 import imgDuncan from "../public/content/duncan.jpg";
+import { NodeNextRequest } from "next/dist/server/base-http/node";
 
 const Home: NextPage = () => {
+  const DuncanTitle = () => {
+    return (
+      <>
+        Umwelt <span className="deemphasised">and</span> The Memory Passage
+      </>
+    );
+  };
   return (
     <>
       <Canvas />
@@ -76,7 +84,18 @@ const Home: NextPage = () => {
             altText="A man holding a box with a head for a tree."
             alignment="right"
             colour="lime"
-            title="Umwelt and The Memory Passage"
+            title={
+              <>
+                Umwelt{" "}
+                <span
+                  className="deemphasised"
+                  style={{ textTransform: "none" }}
+                >
+                  and
+                </span>{" "}
+                The Memory Passage
+              </>
+            }
             description="Ioannis Panagiotou presents 2 films, Umwelt and The Memory Passage, featuring Plus Minus Ensemble, Red Note Ensemble and the Edinburgh Film Music Orchestra. Pilgrim's Horses, part 3 of this trilogy, has been commissioned for b-side and can be seen at Sweet Hill Farm."
             linkText="Watch Umwelt and The Memory Passage"
           />

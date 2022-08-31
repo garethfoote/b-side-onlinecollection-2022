@@ -65,7 +65,13 @@ const UmweltAndMemoryPassage: NextPage = () => {
                 colour={colour}
               />
             </div>
-            <h1>Umwelt and The Memory Passage</h1>
+            <h1>
+              Umwelt{" "}
+              <span className="deemphasised" style={{ textTransform: "none" }}>
+                and
+              </span>{" "}
+              The Memory Passage
+            </h1>
             <h2>Ioannis Panagiotou</h2>
           </div>
           <div className={cx(styles.viewer, styles.youtube)}>

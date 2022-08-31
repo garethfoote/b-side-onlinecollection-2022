@@ -9,7 +9,7 @@ type Align = "left" | "right";
 type Props = {
   href: string;
   img: ImageProps;
-  title: string;
+  title: string | JSX.Element;
   altText: string;
   description: string;
   linkText: string;
