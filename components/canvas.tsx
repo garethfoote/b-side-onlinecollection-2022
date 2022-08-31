@@ -2,7 +2,7 @@ import styles from "../styles/Canvas.module.css";
 import { useEffect, useState, useRef, createRef } from "react";
 import throttle from "lodash/throttle";
 
-const getBsideLogo = (ctx: CanvasRenderingContext2D) => {
+const getCircleDPath = (ctx: CanvasRenderingContext2D) => {
   const p1 = new Path2D(
     "M500 700.88c-110.76 0-200.87-90.12-200.87-200.88S389.24 299.12 500 299.12 700.88 389.24 700.88 500 610.76 700.88 500 700.88m0-481.29c-154.62 0-280.41 125.79-280.41 280.41S345.38 780.41 500 780.41 780.41 654.62 780.41 500 654.62 219.59 500 219.59"
   );
@@ -39,63 +39,50 @@ const getBsideLogo = (ctx: CanvasRenderingContext2D) => {
 const Canvas = ({}) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height,
-    };
-  }
-
-  const [windowDimensions, setWindowDimensions] = useState({
-    width: 0,
-    height: 0,
-  });
-
   function draw(canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D) {
+    const mediaQuery0 = window.matchMedia("(min-width: 321px)");
     const mediaQuery1 = window.matchMedia("(min-width: 481px)");
     const mediaQuery2 = window.matchMedia("(min-width: 768px)");
+    const mediaQuery3 = window.matchMedia("min-width: 1023px");
 
+    // Small, y=middle, x=variable
     ctx.save();
-
     if (mediaQuery1.matches == false) ctx.translate(10, 642);
     else if (mediaQuery1.matches == true) ctx.translate(canvas.width - 50, 642);
     else if (mediaQuery2.matches == true) ctx.translate(canvas.width, 642);
     ctx.scale(0.075, 0.075);
-    ctx = getBsideLogo(ctx);
+    ctx = getCircleDPath(ctx);
     ctx.restore();
 
-    // Top, half hidden
+    // Medium, y=top/halfhidden, x=0.675*width
     ctx.save();
-    ctx.translate(0.05 * canvas.width, 780);
-    ctx.scale(0.15, 0.15);
-    ctx = getBsideLogo(ctx);
+    ctx.translate(canvas.width * 0.675, -60);
+    ctx.scale(0.1, 0.1);
+    ctx = getCircleDPath(ctx);
     ctx.restore();
 
-    // Top, half hidden
+    // // Large, y=towards bottom, x= left
     ctx.save();
-    ctx.translate(canvas.width * 0.675, -100);
-    ctx.scale(0.15, 0.15);
-    ctx = getBsideLogo(ctx);
+    if (mediaQuery2.matches === true)
+      ctx.translate(0.05 * canvas.width, canvas.height - 275);
+    else if (mediaQuery1.matches === true)
+      ctx.translate(0.05 * canvas.width, canvas.height * 0.63);
+    else if (mediaQuery0.matches === true)
+      ctx.translate(canvas.width - 100, 1100);
+    else ctx.translate(0.05 * canvas.width, 1150);
+    ctx.scale(0.1, 0.1);
+    ctx = getCircleDPath(ctx);
     ctx.restore();
   }
 
   useEffect(() => {
-    // const c = document.getElementById("myCanvas") as HTMLCanvasElement;
     let c = canvasRef.current as HTMLCanvasElement;
     let ctx = c?.getContext("2d") as CanvasRenderingContext2D;
 
     const resize = throttle(() => {
-      // setWindowDimensions({
-      //   width: window.innerWidth,
-      //   height: window.innerWidth,
-      // });
-
-      // const width = window.innerHeight;
-      // const height = window.innerWidth;
-      console.log(window.innerWidth);
-      const width = window.innerWidth;
-      const height = window.innerHeight;
+      console.log(document.body.clientWidth);
+      const width = document.body.clientWidth;
+      const height = document.body.clientHeight;
       const pixelRatio = window.devicePixelRatio || 1;
 
       if (c) {
@@ -106,15 +93,14 @@ const Canvas = ({}) => {
         c.style.height = `${height}px`;
       }
 
-      // for sprites scaled up to retina resolution
       ctx.imageSmoothingEnabled = false;
       ctx.scale(pixelRatio, pixelRatio);
-      console.log(c, c.width);
+
       ctx.clearRect(0, 0, c.width, c.height);
       draw(c, ctx);
     }, 1000);
 
-    // handleResize();
+    resize();
     window.addEventListener("resize", resize);
     return () => window.removeEventListener("resize", resize);
   }, []);
