@@ -39,24 +39,30 @@ const getCircleDPath = (ctx: CanvasRenderingContext2D) => {
 const Canvas = ({}) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  function draw(canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D) {
+  function draw(
+    canvas: HTMLCanvasElement,
+    ctx: CanvasRenderingContext2D,
+    width: number,
+    height: number
+  ) {
     const mediaQuery0 = window.matchMedia("(min-width: 321px)");
     const mediaQuery1 = window.matchMedia("(min-width: 481px)");
     const mediaQuery2 = window.matchMedia("(min-width: 768px)");
-    const mediaQuery3 = window.matchMedia("min-width: 1023px");
+    // const mediaQuery3 = window.matchMedia("min-width: 1023px");
 
     // Small, y=middle, x=variable
     ctx.save();
+
     if (mediaQuery1.matches == false) ctx.translate(10, 642);
-    else if (mediaQuery1.matches == true) ctx.translate(canvas.width - 50, 642);
-    else if (mediaQuery2.matches == true) ctx.translate(canvas.width, 642);
+    else if (mediaQuery1.matches == true) ctx.translate(width - 50, 642);
+    else if (mediaQuery2.matches == true) ctx.translate(width, 642);
     ctx.scale(0.075, 0.075);
     ctx = getCircleDPath(ctx);
     ctx.restore();
 
     // Medium, y=top/halfhidden, x=0.675*width
     ctx.save();
-    ctx.translate(canvas.width * 0.675, -60);
+    ctx.translate(width * 0.675, -60);
     ctx.scale(0.1, 0.1);
     ctx = getCircleDPath(ctx);
     ctx.restore();
@@ -64,12 +70,11 @@ const Canvas = ({}) => {
     // // Large, y=towards bottom, x= left
     ctx.save();
     if (mediaQuery2.matches === true)
-      ctx.translate(0.05 * canvas.width, canvas.height - 275);
+      ctx.translate(0.05 * width, canvas.height - 275);
     else if (mediaQuery1.matches === true)
-      ctx.translate(0.05 * canvas.width, canvas.height * 0.63);
-    else if (mediaQuery0.matches === true)
-      ctx.translate(canvas.width - 100, 1100);
-    else ctx.translate(0.05 * canvas.width, 1150);
+      ctx.translate(0.05 * width, canvas.height * 0.63);
+    else if (mediaQuery0.matches === true) ctx.translate(width - 100, 1100);
+    else ctx.translate(0.05 * width, 1150);
     ctx.scale(0.1, 0.1);
     ctx = getCircleDPath(ctx);
     ctx.restore();
@@ -80,8 +85,7 @@ const Canvas = ({}) => {
     let ctx = c?.getContext("2d") as CanvasRenderingContext2D;
 
     const resize = throttle(() => {
-      console.log(document.body.clientWidth);
-      const width = document.body.clientWidth;
+      const width = document.body.scrollWidth;
       const height = document.body.clientHeight;
       const pixelRatio = window.devicePixelRatio || 1;
 
@@ -97,7 +101,7 @@ const Canvas = ({}) => {
       ctx.scale(pixelRatio, pixelRatio);
 
       ctx.clearRect(0, 0, c.width, c.height);
-      draw(c, ctx);
+      draw(c, ctx, width, height);
     }, 1000);
 
     resize();
