@@ -73,7 +73,7 @@ const Canvas = ({}) => {
       ctx.translate(0.05 * width, canvas.height - 275);
     else if (mediaQuery1.matches === true)
       ctx.translate(0.05 * width, canvas.height * 0.63);
-    else if (mediaQuery0.matches === true) ctx.translate(width - 100, 1100);
+    else if (mediaQuery0.matches === true) ctx.translate(width - 100, 1200);
     else ctx.translate(0.05 * width, 1150);
     ctx.scale(0.1, 0.1);
     ctx = getCircleDPath(ctx);
@@ -85,7 +85,9 @@ const Canvas = ({}) => {
     let ctx = c?.getContext("2d") as CanvasRenderingContext2D;
 
     const resize = throttle(() => {
-      const width = document.body.scrollWidth;
+      const width =
+        document.body.clientWidth +
+        (window.innerWidth - document.documentElement.clientWidth);
       const height = document.body.clientHeight;
       const pixelRatio = window.devicePixelRatio || 1;
 
@@ -101,6 +103,8 @@ const Canvas = ({}) => {
       ctx.scale(pixelRatio, pixelRatio);
 
       ctx.clearRect(0, 0, c.width, c.height);
+      ctx.fill();
+      ctx.rect(0, 0, c.width, c.height);
       draw(c, ctx, width, height);
     }, 1000);
 
