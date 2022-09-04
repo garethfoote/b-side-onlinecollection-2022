@@ -115,17 +115,20 @@ p.deemphasised {
 }
 
 .button {
+  text-align: center;   
+  font-size: 20px;
   display: inline-flex;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: var(--colour-pink);
-  padding: 0 16px;
+  padding: 0 2rem;
   line-height: 1.2; 
   vertical-align: middle;
-  height: 3rem;
+  height: 5rem;
   color: white;
   font-weight: bold;
   text-decoration: none;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 .icon {
@@ -160,6 +163,11 @@ header {
     font-size: 2rem;
     min-height: 3.5rem;
     white-space: nowrap;
+  }
+
+  .button {
+    font-size: 24px;
+    padding: 0 2rem;
   }
 }
 
