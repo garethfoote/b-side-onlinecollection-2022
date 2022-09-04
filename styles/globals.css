@@ -114,6 +114,39 @@ p.deemphasised {
   font-size: 0.75rem;
 }
 
+.button {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--colour-pink);
+  padding: 0 16px;
+  line-height: 1.2; 
+  vertical-align: middle;
+  height: 3rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.icon {
+  display: inline-block;
+  max-height: 100%;
+  width: 12px;
+  margin: 5px;
+}
+
+.icon svg {
+  stroke: black !important;
+  fill: black !important;
+}
+
+.button-msg {
+  height: 2rem;
+  font-size: 12px; 
+  text-align: center;
+}
+
+
 * {
   box-sizing: border-box;
 }

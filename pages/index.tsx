@@ -40,7 +40,7 @@ const Home: NextPage = () => {
             B-Side: <em>Online Collection</em>
           </h1>
           <p>
-            Want to see and hear some more or can&apos;t make it to the island?
+            Want to see and hear some art or can&apos;t make it to the island?
             Our online programme of sound and image is available until 18th
             September. Featuring work by festival artists Duncan Whitley,
             Belinda Zhawi and Ioannis Panagiotou.
