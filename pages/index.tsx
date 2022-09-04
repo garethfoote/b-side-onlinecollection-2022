@@ -7,16 +7,10 @@ import Canvas from "../components/canvas";
 import imgBelinda from "../public/content/belinda.jpg";
 import imgIoannis from "../public/content/ioannis.png";
 import imgDuncan from "../public/content/duncan.jpg";
-import { NodeNextRequest } from "next/dist/server/base-http/node";
+import imgSoundOf from "../public/content/sound-of-nairobi.jpg";
 
 const Home: NextPage = () => {
-  const DuncanTitle = () => {
-    return (
-      <>
-        Umwelt <span className="deemphasised">and</span> The Memory Passage
-      </>
-    );
-  };
+
   return (
     <>
       <Canvas />
@@ -98,6 +92,16 @@ const Home: NextPage = () => {
             }
             description="Ioannis Panagiotou presents 2 films, Umwelt and The Memory Passage, featuring Plus Minus Ensemble, Red Note Ensemble and the Edinburgh Film Music Orchestra. Pilgrim's Horses, part 3 of this trilogy, has been commissioned for b-side and can be seen at Sweet Hill Farm."
             linkText="Watch Umwelt and The Memory Passage"
+          />
+          <HomePageItem
+            href="sound-of-naiorobi"
+            img={{ src: imgSoundOf }}
+            altText="Image of a street in Nairobi."
+            alignment="left"
+            colour="orange"
+            title="Sound of Nairobi"
+            description="SOUND OF NAIROBI (SON) is an open-access archive of the sounds of Nairobi. It employs sound as a material that can be archived, researched and explored as a source of information that can narrate the story of the city, now and in the future. It is intended as a resource for artists, researchers, recordists… anyone interested in sound."
+            linkText="Listen to Sound of Nairobi"
           />
         </main>
         <footer className={styles.fullProgramme}>
