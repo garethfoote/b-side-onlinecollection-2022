@@ -70,7 +70,7 @@ const SouthXSouthEast: NextPage = () => {
           </div>
           <div className={styles.viewer}>
             <iframe
-              style={{ border: 0, width: 350, height: 442 }}
+              style={{ border: 0, maxWidth: 350, height: 442 }}
               src="https://bandcamp.com/EmbeddedPlayer/track=3422374590/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
               seamless
             >
