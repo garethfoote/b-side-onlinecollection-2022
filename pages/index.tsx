@@ -94,7 +94,7 @@ const Home: NextPage = () => {
             linkText="Watch Umwelt and The Memory Passage"
           />
           <HomePageItem
-            href="sound-of-naiorobi"
+            href="sound-of-nairobi"
             img={{ src: imgSoundOf }}
             altText="Image of a street in Nairobi."
             alignment="left"
