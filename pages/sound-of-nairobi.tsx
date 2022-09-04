@@ -95,7 +95,7 @@ const SouthXSouthEast: NextPage = () => {
                   Masaii Mbili
                 </a>{" "}
                 an artist and activist collective based in Kibera, a large
-                informal settlement in Nairobi's city centre.
+                informal settlement in Nairobi&apos;s city centre.
               </p>
               <p>
                 Creatives Garage, led by Liz Kilili, have co-designed our queer
@@ -106,7 +106,7 @@ const SouthXSouthEast: NextPage = () => {
                 <a href="https://b-side.org.uk/events/requital-the-lighthouse-as-the-siren/">
                   augmented reality artwork
                 </a>{" "}
-                at the Isle of Portland's Portland Bill Lighthouse.
+                at the Isle of Portland&apos;s Portland Bill Lighthouse.
               </p>
               <p>
                 Masaii Mbili have kindly lent us Kevo Stero. An artist and sign
@@ -117,8 +117,8 @@ const SouthXSouthEast: NextPage = () => {
                 </a>
                 . A citizen journalist project, Kevo has been excavating stories
                 of Portland islanders, working with residents to turn their
-                stories into giant banners which will be paraded at this year's
-                Portland Parade.
+                stories into giant banners which will be paraded at this
+                year&apos;s Portland Parade.
               </p>
               <p>
                 As part of our Online Collection we want to share with you SOUND
