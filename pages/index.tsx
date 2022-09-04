@@ -43,7 +43,7 @@ const Home: NextPage = () => {
             Want to see and hear some art or can&apos;t make it to the island?
             Our online programme of sound and image is available until 18th
             September. Featuring work by festival artists Duncan Whitley,
-            Belinda Zhawi and Ioannis Panagiotou.
+            Belinda Zhawi, Ioannis Panagiotou and Sound of Nairobi.
           </p>
           <p className="deemphasised">
             b-side Festival&apos;s Online Collection has been made possible with

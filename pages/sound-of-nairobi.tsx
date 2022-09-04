@@ -80,7 +80,7 @@ const SouthXSouthEast: NextPage = () => {
                 className="button"
                 href="https://archive.soundofnairobi.net/son/maps"
               >
-                Visit Sounds of Nairobi
+                Visit Sound of Nairobi
                 <br />
               </a>
               <div className="button-msg">
